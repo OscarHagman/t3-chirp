@@ -70,7 +70,7 @@ const Home: NextPage = () => {
           </div>
           <div>
             {data?.map((fullPost) => (
-              <PostView {...fullPost} />
+              <PostView {...fullPost} key={fullPost.author.id} />
             ))}
           </div>
         </div>
